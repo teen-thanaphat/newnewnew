@@ -58,7 +58,7 @@ function Mshow() {
               <th scope="col" className="col-2">เลขครุภัณฑ์</th>
               <th scope="col" className="col-4">ชื่อครุภัณฑ์</th>
               <th scope="col" className="col-1">ห้อง</th>
-              <th scope="col" className="col-2">รูป</th>
+              <th scope="col" className="col-1">รูป</th>
               <th scope="col" className="col-2">รายละเอียด</th>
               <th scope="col" className="col-1">ชื่อผู้แจ้ง</th>
               <th scope="col" className="col-1">วันที่แจ้ง</th>

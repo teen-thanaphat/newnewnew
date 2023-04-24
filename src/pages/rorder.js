@@ -62,7 +62,7 @@ function Dshow() {
           </div>
         </div>
 
-        <table className="table" style={{ tableLayout: "fixed", width: "90%", margin: "0 auto" }}>
+        <table className="table" style={{ tableLayout: "fixed", width: "95%", margin: "0 auto" }}>
           <thead>
             <tr>
               <th scope="col" className="col-1">ลำดับ</th>
@@ -93,7 +93,7 @@ function Dshow() {
           </tbody>
         </table>
 
-        <nav style={{ tableLayout: "fixed", width: "90%", margin: "0 auto" }}>
+        <nav style={{ tableLayout: "fixed", width: "95%", margin: "0 auto" }}>
           <ul className="pagination">
             <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
               <button onClick={() => paginate(1)} className="page-link">หน้าแรก</button>

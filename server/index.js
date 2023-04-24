@@ -649,19 +649,21 @@ app.get("/repair/:repair_durablearticles_Id", (req, res) => {
 });
 
 app.put('/repair/:repair_durablearticles_Id', (req, res) => {
-  const repair_durablearticles_Id = req.body.repair_durablearticles_Id;
+  const repair_durablearticles_Id = req.params.repair_durablearticles_Id;
   const repair_status = req.body.repair_status;
   db.query(
-    "UPDATE repair_durablearticles SET repair_status = ? WHERE repair_durablearticles_Id = ?",
+    "UPDATE repair_durablearticles SET repair_status = ? WHERE durablearticles_Id = (SELECT durablearticles_Id FROM repair_durablearticles WHERE repair_durablearticles_Id = ?)",
     [repair_status, repair_durablearticles_Id],
     (err, result) => {
       if (err) {
         console.log(err);
+        res.status(500).send("Internal Server Error");
       } else {
         res.send(result);
       }
     });
 });
+
 
 //login
 const scopes = 'personel,student,templecturer'; // <----- Scopes for search account type

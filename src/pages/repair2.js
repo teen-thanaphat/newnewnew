@@ -53,7 +53,7 @@ const Dshow2 = () => {
                     <br />
 
                     <div className="field">
-                        <label className="label">เลขวัสดุ : {durablearticles_Id}</label>
+                        <label className="label">เลขครุภัณฑ์ : {durablearticles_Id}</label>
                     </div>
 
                     <div className="field">
